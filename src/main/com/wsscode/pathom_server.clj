@@ -11,11 +11,11 @@
     [ring.middleware.cors :refer [wrap-cors]]))
 
 ; create a boundary interface
-(def interface (p.eql/boundary-interface env))
+(def pathom (p.eql/boundary-interface env))
 
 (defn handler [{:keys [body-params]}]
   {:status 200
-   :body   (interface body-params)})
+   :body   (pathom body-params)})
 
 (def muuntaja-options
   (update-in
