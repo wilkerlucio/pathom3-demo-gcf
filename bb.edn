@@ -13,7 +13,7 @@
 
   deploy
   {:depends [assemble]
-   :task    (shell "gcloud functions deploy --runtime java11 --source target/artifacts/ --max-instances 1 development-pathom-server-demo --trigger-http --allow-unauthenticated --entry-point PathomServer --memory 2GB --timeout 270")}
+   :task    (shell "gcloud --project pathomdemos functions deploy --region southamerica-east1 --runtime java11 --source target/artifacts/ --max-instances 1 development-pathom-server-demo --trigger-http --allow-unauthenticated --entry-point PathomServer --memory 2GB --timeout 270")}
 
   run
   (clojure {:extra-env {"PORT" "13337"}} "-X:run")}}
