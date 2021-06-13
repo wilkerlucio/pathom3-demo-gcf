@@ -3,6 +3,7 @@
     ; to include the env setup from the Tutorial demo
     [com.wsscode.pathom3.demos.ip-weather :refer [env]]
 
+    [cognitect.transit :as t]
     [com.wsscode.pathom3.connect.operation.transit :as pcot]
     [com.wsscode.pathom3.interface.eql :as p.eql]
     [muuntaja.core :as muuntaja]
@@ -20,8 +21,11 @@
   (update-in
     muuntaja/default-options
     [:formats "application/transit+json"]
+    ; in this part we setup the read and write handlers for Pathom resolvers and mutations
     merge {:decoder-opts {:handlers pcot/read-handlers}
-           :encoder-opts {:handlers pcot/write-handlers}}))
+           :encoder-opts {:handlers  pcot/write-handlers
+                          ; write-meta is required if you wanna see execution stats on Pathom Viz
+                          :transform t/write-meta}}))
 
 (def app
   (-> handler

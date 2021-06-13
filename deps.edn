@@ -2,7 +2,7 @@
  ["src/main" "src/java"]
 
  :deps
- {com.wsscode/pathom3                        {:git/url "https://github.com/wilkerlucio/pathom3" :sha "6dcd414bf39e9f162b18228d2048697aa7801d25"}
+ {com.wsscode/pathom3                        {:git/url "https://github.com/wilkerlucio/pathom3" :sha "898a1b1916af01d9ab744ef0c0e9a5f5321e7860"}
   metosin/muuntaja                           {:mvn/version "0.6.8"}
   nl.epij/google-cloud-function-ring-adapter {:mvn/version "0.1.0-SNAPSHOT"}
   org.clojure/clojure                        {:mvn/version "1.10.3"}
