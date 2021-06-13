@@ -1,4 +1,4 @@
-import nl.epij.gcp.gcf.RingHttpFunction;
+import nl.epij.gcf.RingHttpFunction;
 
 public class PathomServer extends RingHttpFunction {
     public String getHandler() {

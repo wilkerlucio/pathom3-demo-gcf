@@ -14,74 +14,70 @@
     <orderEntry type="library" name="Deps: commons-codec:1.11" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/tools.analyzer:1.0.0" level="project" />
     <orderEntry type="library" name="Deps: com.fulcrologic/guardrails:1.1.4" level="project" />
-    <orderEntry type="library" name="Deps: com.google.errorprone/error_prone_annotations:2.3.4" level="project" />
+    <orderEntry type="library" name="Deps: com.google.errorprone/error_prone_annotations:2.5.1" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/core.specs.alpha:0.2.56" level="project" />
     <orderEntry type="library" name="Deps: javax.annotation/javax.annotation-api:1.3.2" level="project" />
-    <orderEntry type="library" name="Deps: com.google.auto.value/auto-value-annotations:1.7.4" level="project" />
+    <orderEntry type="library" name="Deps: com.google.auto.value/auto-value-annotations:1.8.1" level="project" />
     <orderEntry type="library" name="Deps: metosin/muuntaja:0.6.8" level="project" />
     <orderEntry type="library" name="Deps: edn-query-language/eql:1.0.2" level="project" />
-    <orderEntry type="library" name="Deps: com.google.auth/google-auth-library-credentials:0.24.1" level="project" />
+    <orderEntry type="library" name="Deps: com.google.auth/google-auth-library-credentials:0.26.0" level="project" />
     <orderEntry type="library" name="Deps: com.fasterxml.jackson.core/jackson-databind:2.12.0" level="project" />
     <orderEntry type="library" name="Deps: expound:0.8.5" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/spec.alpha:0.2.194" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/tools.cli:0.3.5" level="project" />
-    <orderEntry type="library" name="Deps: com.google.api.grpc/proto-google-iam-v1:1.0.11" level="project" />
+    <orderEntry type="library" name="Deps: com.google.api.grpc/proto-google-iam-v1:1.0.14" level="project" />
     <orderEntry type="library" name="Deps: io.cloudevents/cloudevents-api:2.0.0.RC2" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/tools.analyzer.jvm:1.1.0" level="project" />
-    <orderEntry type="library" name="Deps: com.google.protobuf/protobuf-java-util:3.15.5" level="project" />
-    <orderEntry type="library" name="Deps: com.google.api/api-common:1.10.1" level="project" />
+    <orderEntry type="library" name="Deps: com.google.protobuf/protobuf-java-util:3.17.3" level="project" />
+    <orderEntry type="library" name="Deps: com.google.api/api-common:1.10.3" level="project" />
     <orderEntry type="library" name="Deps: ring-cors:0.1.13" level="project" />
     <orderEntry type="library" name="Deps: com.fasterxml.jackson.dataformat/jackson-dataformat-cbor:2.10.2" level="project" />
     <orderEntry type="library" name="Deps: com.googlecode.json-simple/json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Deps: ch.qos.logback/logback-core:1.2.3" level="project" />
     <orderEntry type="library" name="Deps: io.grpc/grpc-context:1.27.2" level="project" />
     <orderEntry type="library" name="Deps: com.google.guava/listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/tools.namespace:0.2.11" level="project" />
     <orderEntry type="library" name="Deps: com.wsscode/log:1ac610" level="project" />
-    <orderEntry type="library" name="Deps: com.fasterxml.jackson.core/jackson-core:2.12.1" level="project" />
+    <orderEntry type="library" name="Deps: com.fasterxml.jackson.core/jackson-core:2.12.3" level="project" />
     <orderEntry type="library" name="Deps: org.ow2.asm/asm:5.2" level="project" />
     <orderEntry type="library" name="Deps: org.apache.httpcomponents/httpcore:4.4.14" level="project" />
     <orderEntry type="library" name="Deps: net.logstash.logback/logstash-logback-encoder:6.6" level="project" />
-    <orderEntry type="library" name="Deps: com.wsscode/pathom3:6dcd41" level="project" />
-    <orderEntry type="library" name="Deps: com.google.http-client/google-http-client:1.39.0" level="project" />
+    <orderEntry type="library" name="Deps: com.wsscode/pathom3:898a1b" level="project" />
+    <orderEntry type="library" name="Deps: com.google.http-client/google-http-client:1.39.2" level="project" />
     <orderEntry type="library" name="Deps: clj-tuple:0.2.2" level="project" />
-    <orderEntry type="library" name="Deps: com.cognitect/test-runner:209b64" level="project" />
     <orderEntry type="library" name="Deps: com.fasterxml.jackson.core/jackson-annotations:2.12.0" level="project" />
     <orderEntry type="library" name="Deps: riddley:0.1.12" level="project" />
-    <orderEntry type="library" name="Deps: nl.epij/google-cloud-function-ring-adapter:0.1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Deps: org.javassist/javassist:3.18.1-GA" level="project" />
     <orderEntry type="library" name="Deps: org.checkerframework/checker-compat-qual:2.5.5" level="project" />
     <orderEntry type="library" name="Deps: commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Deps: com.google.guava/failureaccess:1.0.1" level="project" />
-    <orderEntry type="library" name="Deps: com.google.guava/guava:30.1-android" level="project" />
-    <orderEntry type="library" name="Deps: nl.epij/google-cloud-function-commons:0.1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Deps: org.threeten/threetenbp:1.5.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.guava/guava:30.1.1-android" level="project" />
+    <orderEntry type="library" name="Deps: org.threeten/threetenbp:1.5.1" level="project" />
     <orderEntry type="library" name="Deps: org.msgpack/msgpack:0.6.12" level="project" />
     <orderEntry type="library" name="Deps: com.google.j2objc/j2objc-annotations:1.3" level="project" />
-    <orderEntry type="library" name="Deps: com.google.api.grpc/proto-google-common-protos:2.1.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.api.grpc/proto-google-common-protos:2.3.2" level="project" />
     <orderEntry type="library" name="Deps: com.cognitect/transit-clj:1.0.324" level="project" />
-    <orderEntry type="library" name="Deps: com.google.http-client/google-http-client-gson:1.39.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.http-client/google-http-client-gson:1.39.2" level="project" />
     <orderEntry type="library" name="Deps: io.opencensus/opencensus-contrib-http-util:0.28.0" level="project" />
     <orderEntry type="library" name="Deps: com.google.cloud.functions/functions-framework-api:1.0.4" level="project" />
     <orderEntry type="library" name="Deps: org.apache.httpcomponents/httpclient:4.5.13" level="project" />
-    <orderEntry type="library" name="Deps: com.google.cloud/google-cloud-core:1.94.4" level="project" />
+    <orderEntry type="library" name="Deps: com.google.cloud/google-cloud-core:1.95.2" level="project" />
     <orderEntry type="library" name="Deps: funcool/promesa:6.0.0" level="project" />
     <orderEntry type="library" name="Deps: cheshire:5.10.0" level="project" />
     <orderEntry type="library" name="Deps: tigris:0.1.2" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/tools.reader:1.3.2" level="project" />
     <orderEntry type="library" name="Deps: com.wsscode/cljc-misc:2021.05.12" level="project" />
+    <orderEntry type="library" name="Deps: nl.epij/google-cloud-functions-ring-adapter:0.1.0" level="project" />
     <orderEntry type="library" name="Deps: potemkin:0.4.5" level="project" />
     <orderEntry type="library" name="Deps: org.slf4j/slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Deps: metosin/jsonista:0.3.1" level="project" />
-    <orderEntry type="library" name="Deps: com.google.protobuf/protobuf-java:3.15.5" level="project" />
-    <orderEntry type="library" name="Deps: com.google.auth/google-auth-library-oauth2-http:0.24.1" level="project" />
+    <orderEntry type="library" name="Deps: com.google.protobuf/protobuf-java:3.17.3" level="project" />
+    <orderEntry type="library" name="Deps: com.google.auth/google-auth-library-oauth2-http:0.26.0" level="project" />
     <orderEntry type="library" name="Deps: ch.qos.logback/logback-classic:1.2.3" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/core.memoize:1.0.236" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/data.priority-map:1.0.0" level="project" />
     <orderEntry type="library" name="Deps: io.opencensus/opencensus-api:0.28.0" level="project" />
     <orderEntry type="library" name="Deps: com.google.code.findbugs/jsr305:3.0.2" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/core.cache:1.0.207" level="project" />
-    <orderEntry type="library" name="Deps: com.google.api/gax:1.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.api/gax:1.65.1" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/core.async:1.3.618" level="project" />
     <orderEntry type="library" name="Deps: com.fasterxml.jackson.dataformat/jackson-dataformat-smile:2.10.2" level="project" />
     <orderEntry type="library" name="Deps: com.fasterxml.jackson.datatype/jackson-datatype-jsr310:2.12.0" level="project" />

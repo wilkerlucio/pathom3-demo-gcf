@@ -2,30 +2,21 @@
  ["src/main" "src/java"]
 
  :deps
- {com.wsscode/pathom3                        {:git/url "https://github.com/wilkerlucio/pathom3" :sha "898a1b1916af01d9ab744ef0c0e9a5f5321e7860"}
-  metosin/muuntaja                           {:mvn/version "0.6.8"}
-  nl.epij/google-cloud-function-ring-adapter {:mvn/version "0.1.0-SNAPSHOT"}
-  org.clojure/clojure                        {:mvn/version "1.10.3"}
-  org.clojure/core.async                     {:mvn/version "1.3.618"}
-  ring-cors/ring-cors                        {:mvn/version "0.1.13"}}
+ {com.wsscode/pathom3                         {:git/url "https://github.com/wilkerlucio/pathom3" :sha "898a1b1916af01d9ab744ef0c0e9a5f5321e7860"}
+  metosin/muuntaja                            {:mvn/version "0.6.8"}
+  nl.epij/google-cloud-functions-ring-adapter {:mvn/version "0.1.0"}
+  org.clojure/clojure                         {:mvn/version "1.10.3"}
+  org.clojure/core.async                      {:mvn/version "1.3.618"}
+  ring-cors/ring-cors                         {:mvn/version "0.1.13"}}
 
  :aliases
  {:tasks
   {:extra-deps  {babashka/babashka {:mvn/version "0.4.4"}}
    :extra-paths ["src/tasks"]}
 
-  :test
-  {:extra-paths ["test"]
-   :extra-deps  {com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner.git" :sha "209b64504cb3bd3b99ecfec7937b358a879f55c1"}}
-   :main-opts   ["-m" "cognitect.test-runner"]}
-
-  :test-cljs
-  {:extra-paths ["test"]
-   :extra-deps  {thheller/shadow-cljs {:mvn/version "2.11.9"}}}
-
   :assemble
-  {:extra-deps {nl.epij.gcf/deploy {:git/url   "https://github.com/pepijn/google-cloud-function-ring-adapter"
-                                    :sha       "ede2ccee2fec5a526350622f32a39fac95bb0273"
+  {:extra-deps {nl.epij.gcf/deploy {:git/url   "https://github.com/pepijn/google-cloud-functions-clojure"
+                                    :sha       "e0f49db974a8f97e1459efd16c0edfb3030a6115"
                                     :deps/root "deploy"}}
    :exec-fn    nl.epij.gcf.deploy/assemble-jar!
    :exec-args  {:nl.epij.gcf/entrypoint   PathomServer
@@ -33,8 +24,8 @@
                 :nl.epij.gcf/compile-path "target/classes"
                 :nl.epij.gcf/jar-path     "target/artifacts/application.jar"}}
   :run
-  {:extra-deps {nl.epij.gcf/deploy {:git/url   "https://github.com/pepijn/google-cloud-function-ring-adapter"
-                                    :sha       "ede2ccee2fec5a526350622f32a39fac95bb0273"
+  {:extra-deps {nl.epij.gcf/deploy {:git/url   "https://github.com/pepijn/google-cloud-functions-clojure"
+                                    :sha       "e0f49db974a8f97e1459efd16c0edfb3030a6115"
                                     :deps/root "deploy"}}
    :exec-fn    nl.epij.gcf.deploy/run-server!
    :exec-args  {:nl.epij.gcf/entrypoint   PathomServer
