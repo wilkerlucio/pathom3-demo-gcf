@@ -1,5 +1,5 @@
 {:paths
- ["src/main" "src/java"]
+ ["src/main" "src/java" "src/resources"]
 
  :deps
  {com.wsscode/pathom3                         {:git/url "https://github.com/wilkerlucio/pathom3" :sha "acf3134aa52668d83cffd326c46fca1ef0120e99"}

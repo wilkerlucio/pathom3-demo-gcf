@@ -40,7 +40,7 @@
     <orderEntry type="library" name="Deps: org.ow2.asm/asm:5.2" level="project" />
     <orderEntry type="library" name="Deps: org.apache.httpcomponents/httpcore:4.4.14" level="project" />
     <orderEntry type="library" name="Deps: net.logstash.logback/logstash-logback-encoder:6.6" level="project" />
-    <orderEntry type="library" name="Deps: com.wsscode/pathom3:898a1b" level="project" />
+    <orderEntry type="library" name="Deps: com.wsscode/pathom3:acf313" level="project" />
     <orderEntry type="library" name="Deps: com.google.http-client/google-http-client:1.39.2" level="project" />
     <orderEntry type="library" name="Deps: clj-tuple:0.2.2" level="project" />
     <orderEntry type="library" name="Deps: com.fasterxml.jackson.core/jackson-annotations:2.12.0" level="project" />
