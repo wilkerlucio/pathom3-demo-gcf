@@ -1,0 +1,20 @@
+{:paths
+ ["src/tasks"]
+
+ :tasks
+ {:requires
+  ([babashka.fs :as fs])
+
+  assemble
+  (when (seq (fs/modified-since "target/artifacts/application.jar"
+               (fs/glob "src" "**.clj")))
+    (println "Building jar...")
+    (clojure "-X:assemble"))
+
+  deploy
+  {:depends [assemble]
+   :task    (shell "gcloud functions deploy --runtime java11 --source target/artifacts/ --max-instances 1 development-pathom-server-demo --trigger-http --allow-unauthenticated --entry-point PathomServer --memory 2GB --timeout 270")}
+
+  run
+  (clojure {:extra-env {"PORT" "13337"}} "-X:run")}}
+
