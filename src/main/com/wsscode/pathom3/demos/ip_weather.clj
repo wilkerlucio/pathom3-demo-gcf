@@ -41,6 +41,4 @@
       (pci/register
         [ip->lat-long
          latlong->woeid
-         woeid->temperature])
-      (p.plugin/register
-        [(pbip/attribute-errors-plugin)])))
+         woeid->temperature])))
