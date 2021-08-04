@@ -7,7 +7,7 @@
 
   assemble
   (when (seq (fs/modified-since "target/artifacts/application.jar"
-               (fs/glob "src" "**.clj")))
+               (into (fs/glob "src" "**.clj") (fs/glob "." "deps.edn"))))
     (println "Building jar...")
     (clojure "-X:assemble"))
 
