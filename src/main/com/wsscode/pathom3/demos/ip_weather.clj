@@ -3,9 +3,7 @@
     [cheshire.core :as json]
     [com.wsscode.pathom3.connect.indexes :as pci]
     [com.wsscode.pathom3.connect.operation :as pco]
-    [com.wsscode.pathom3.connect.planner :as pcp]
-    [com.wsscode.pathom3.connect.built-in.plugins :as pbip]
-    [com.wsscode.pathom3.plugin :as p.plugin]))
+    [com.wsscode.pathom3.connect.planner :as pcp]))
 
 (pco/defresolver ip->lat-long
   [{:keys [ip]}]
@@ -35,10 +33,37 @@
 
 (defonce plan-cache* (atom {}))
 
+(def todo-db
+  {1 {:todo/id    1
+      :todo/title "Write foreign docs"
+      :todo/done? true}
+   2 {:todo/id    2
+      :todo/title "Integrate the whole internet"
+      :todo/done? false}})
+
+(pco/defresolver todo-items []
+  {::pco/output
+   [{:app/all-todos
+     [:todo/id]}]}
+  ; export only the ids to force the usage of another resolver for
+  ; the details
+  {:app/all-todos
+   [{:todo/id 1}
+    {:todo/id 2}]})
+
+(pco/defresolver todo-by-id [{:todo/keys [id]}]
+  {::pco/output
+   [:todo/id
+    :todo/title
+    :todo/done?]}
+  (get todo-db id))
+
 (def env
   ; persistent plan cache
   (-> {::pcp/plan-cache* plan-cache*}
       (pci/register
         [ip->lat-long
          latlong->woeid
-         woeid->temperature])))
+         woeid->temperature
+         todo-items
+         todo-by-id])))
